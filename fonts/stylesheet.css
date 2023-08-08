@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "Prilly-Monly";
+    src: url("Prilly-Monly.ttf") format("truetype"),
+        url("Prilly-Monly.woff") format("woff"),
+        url("Prilly-Monly.woff2") format("woff2");
+}
