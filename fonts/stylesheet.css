@@ -4,3 +4,10 @@
         url("Prilly-Monly.woff") format("woff"),
         url("Prilly-Monly.woff2") format("woff2");
 }
+
+@font-face {
+    font-family: "Nopelia-Moment";
+    src: url("Nopelia-Moment.ttf") format("truetype"),
+        url("Nopelia-Moment.woff") format("woff"),
+        url("Nopelia-Moment.woff2") format("woff2");
+}
