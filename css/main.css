@@ -367,6 +367,7 @@ body {
 }
 
 .nav {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -397,6 +398,76 @@ body {
 
 .nav__links li a:hover {
     color: #e78542;
+}
+
+/* Hamburger Menu icon */
+.navbar-toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    z-index: 999;
+    background: #3c2211;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+    display: none;
+}
+
+.navbar-toggler .toggler-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% - 29px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.toggler-btn .bar {
+    width: 100%;
+    display: block;
+    height: 2px;
+    margin-bottom: 3px;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.toggler-btn .bar:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.navbar-toggler.change .toggler-btn .bar1 {
+    background: #fff;
+    transform: rotate(-45deg) translate(-3px, 3px);
+    -webkit-transform: rotate(-45deg) translate(-3px, 3px);
+    -moz-transform: rotate(-45deg) translate(-3px, 3px);
+    -ms-transform: rotate(-45deg) translate(-3px, 3px);
+    -o-transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+.navbar-toggler.change .toggler-btn .bar2 {
+    opacity: 0;
+}
+
+.navbar-toggler.change .toggler-btn .bar3 {
+    background: #fff;
+    transform: rotate(45deg) translate(-4px, -4px);
+    -webkit-transform: rotate(45deg) translate(-4px, -4px);
+    -moz-transform: rotate(45deg) translate(-4px, -4px);
+    -ms-transform: rotate(45deg) translate(-4px, -4px);
+    -o-transform: rotate(45deg) translate(-4px, -4px);
 }
 
 /* Header Area */
@@ -1624,6 +1695,18 @@ select.input__styles::-ms-expand {
     -o-border-radius: 16px;
 }
 
+.songs-details .accordion__question h3 {
+    transition: all 0.2 ease-in-out;
+    -webkit-transition: all 0.2 ease-in-out;
+    -moz-transition: all 0.2 ease-in-out;
+    -ms-transition: all 0.2 ease-in-out;
+    -o-transition: all 0.2 ease-in-out;
+}
+
+.songs-details .accordion__question.active h3 {
+    color: #e78542;
+}
+
 .songs-details__header {
     display: flex;
     align-items: center;
@@ -1663,7 +1746,7 @@ select.input__styles::-ms-expand {
     height: 100%;
     background-image: url("../img/user-info-divider.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto;
     z-index: -1;
 }
 
@@ -1882,3 +1965,117 @@ select.input__styles::-ms-expand {
 }
 
 /* Custom Check Toggle */
+
+/* Order Payment */
+
+.order-song-area {
+    margin-top: 210px;
+}
+
+.order-song__details {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
+
+.order-song__details .songs-details__header-info,
+.order-song__details .songs-details__header {
+    gap: 50px;
+}
+
+.order-song__details .songs-details__header-info-text {
+    flex: 1;
+}
+
+.order-song__details .songs-details__info {
+    margin-left: 0;
+    margin-top: 0;
+    flex-direction: column;
+    gap: 0;
+}
+
+.order-song__details .songs-details__header-info img {
+    width: 160px;
+    height: auto;
+    padding: 0;
+    object-fit: contain;
+}
+
+.order-song__details .songs-details__header-info {
+    flex: 1;
+}
+
+.order-song__details .songs-details__header-info-text h3 {
+    font-weight: 900;
+}
+
+.order-song__details .songs-details__header-info-text p span {
+    font-weight: 700;
+}
+
+.order-song__details .accordion__arrow {
+    width: 24px;
+    height: 12px;
+}
+
+.songs-details__accordion .accordion__question h3 {
+    font-weight: 900;
+}
+
+.order-song__details .basic-accordion__item {
+    padding: 0;
+    box-shadow: none;
+}
+
+.songs-details__accordion {
+    margin-top: 15px;
+}
+
+.accordion__question .accordion__arrow path {
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.accordion__question.active .accordion__arrow path {
+    stroke: #e78542;
+}
+
+.basic-accordion__item .accordion__answer {
+    margin-top: 35px;
+}
+
+.order-song__details .user-info__items::before {
+    background-size: contain;
+    top: calc(100% + 18px);
+}
+
+.order-song-area .user-info__items {
+    margin-bottom: 40px;
+}
+
+.order__selected-artist {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.order__selected-artist > img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.order__selected-artist h3 {
+    font-weight: 400;
+}
+
+.order__selected-artist .samples__item-play {
+    width: 32px;
+    height: 32px;
+}
+
+/* Order Payment */
