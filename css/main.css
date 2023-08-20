@@ -222,6 +222,10 @@ h6 {
     object-fit: contain;
 }
 
+.download-btn img {
+    height: 16px;
+}
+
 .pending__btns {
     display: flex;
     align-items: center;
@@ -1975,7 +1979,7 @@ select.input__styles::-ms-expand {
 .order-song__details {
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 15px;
+    padding-top: 35px;
     padding-bottom: 35px;
 }
 
@@ -2029,7 +2033,7 @@ select.input__styles::-ms-expand {
 }
 
 .songs-details__accordion {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .accordion__question .accordion__arrow path {
@@ -2079,3 +2083,25 @@ select.input__styles::-ms-expand {
 }
 
 /* Order Payment */
+
+/* Order Pending */
+.order-song-pending-area .songs-details__header-info-text {
+    max-width: 400px;
+}
+
+.order-song-pending-area .songs-details__header-info {
+    justify-content: center;
+}
+
+/* Order Pending */
+
+/* Order Done */
+.order-song-done-area .songs-details__header {
+    flex-direction: column;
+}
+
+.order-song-done-area .songs-details__header .audio__item {
+    width: 100%;
+    max-width: 495px;
+}
+/* Order Done */

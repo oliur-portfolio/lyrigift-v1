@@ -630,7 +630,7 @@
 
     .order-song-area .songs-details {
         padding: 25px 33px;
-        padding-top: 10px;
+        padding-top: 25px;
     }
 
     .order-song__details .songs-details__header-info-text h3 {
@@ -836,6 +836,8 @@
 
     .basic__content h1 img {
         max-width: 185px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .basic {
@@ -845,6 +847,11 @@
 
     .home-hero__content {
         width: 100%;
+    }
+
+    .home-hero__content .custom-btn {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .home-hero-area {
@@ -965,7 +972,7 @@
     }
 
     .why-bg-object {
-        left: -230px;
+        left: -235px;
     }
 
     .review__wrapper {
@@ -1579,6 +1586,7 @@
     .order-song-area .songs-details {
         padding: 9px 10px;
         padding-right: 10px;
+        padding-top: 20px;
     }
 
     .order-song-area .songs-details__header p {
@@ -1622,5 +1630,33 @@
 
     .song-pending-area .songs-details__header {
         gap: 15px;
+    }
+
+    .login-or__line {
+        width: 43%;
+    }
+
+    .login-or {
+        overflow: hidden;
+    }
+
+    .songs-details__accordion {
+        margin-top: 15px;
+    }
+
+    .order-song-done-area .songs-details__header {
+        gap: 16px;
+    }
+
+    .home-hero__content {
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-hero-top-object {
+        left: 55%;
+        width: 110px;
+        height: 34px;
     }
 }
